@@ -15,13 +15,13 @@
   <body class="font-nunito">
     <!-- intro section -->
     <div
-      class="h-1/2 lg:h-screen bg-gradient-to-t from-gray-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden"
-    >
+    class="h-1/2 lg:h-screen bg-gradient-to-t bg-opacity-10 relative overflow-hidden"
+  >
       <!-- navbar -->
       <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
         <div class="container mx-auto py-5 flex items-center justify-between">
           <div class="flex items-center gap-2">
-            <img class="w-8" src="./img/logo.png" alt="" />
+            <!-- <img class="w-8" src="./img/logo.png" alt="" /> -->
             <span class="text-2xl font-bold text-accent-500 dark:text-white"
               >Kayla Vu</span
             >
@@ -36,10 +36,7 @@
               <a href="#about">about me</a>
             </li>
             <li class="hover:text-gray-500">
-              <a href="#services">services</a>
-            </li>
-            <li class="hover:text-gray-500">
-              <a href="#works">works</a>
+              <a href="#works">projects</a>
             </li>
             <li class="hover:text-gray-500">
               <a href="#contact">contact</a>
@@ -52,22 +49,19 @@
             alt=""
           /> -->
           <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
-            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5"></div>
             <div class="w-6 h-0.5 bg-black"></div>
             <div class="w-6 h-0.5 bg-black"></div>
           </div>
           <ul
             id="menu"
-            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
+            class="hidden bg-accent absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
           >
             <li>
               <a id="hLink" href="#">homepage</a>
             </li>
             <li>
               <a id="hLink" href="#about">about me</a>
-            </li>
-            <li>
-              <a id="hLink" href="#services">services</a>
             </li>
             <li>
               <a id="hLink" href="#works">portfolio</a>
@@ -81,50 +75,93 @@
       <!-- intro content -->
 
       <!-- image -->
-      <img
+      <picture>
+        <!-- WebP image -->
+        <source srcset="./img/macbook.webp" type="image/webp">
+        <img
         class="absolute bottom-0 right-0 lg:left-0 mx-auto h-full w-full object-cover -z-10"
         src="./img/macbook.jpg"
         alt=""
-      />
+        />
+      </picture>
       <!-- circle -->
       <!-- <div
         class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"
       ></div> -->
       <!-- animated text -->
       <div
-        class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
-      >
+      class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
         <span class="text-gray-600">Software</span>
-        <p id="text" class="text-gray-600">Developer</p>
+        <p id="text" class="text-accent"></p>
       </div>
       <!-- texts -->
       <div
         class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3"
       >
-        <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Kayla</h1>
+        <h1 class="text-4xl font-bold text-accent">Hi, I'm Kayla</h1>
         <p class="text-gray-400">
-          with over 10 years of experience on web design and development. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. N oumquam quo
-          provident, facere minus temporibus veniam nostrum reprehenderit nihil?
+          I'm still working on my portfolio, but thanks for stopping by!
         </p>
         <a
-          class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit"
+          class="bg-accent text-white text-xl px-3 py-2 rounded-md font-semibold w-fit"
           href="#contact"
-          >Hire Me</a
-        >
+        >Connect</a>
       </div>
     </div>
     <!-- about -->
-    <div id="about" class="px-10 dark:bg-slate-900">
-     
-    </div>
+        <!-- about -->
+        <div id="about" class="px-10">
+          <div
+          class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20"
+          >
+          <!-- left -->
+          <div class="relative">
+            <img
+              class="h-1/4 absolute top-0 left-0 -z-10"
+              src="./img/dots.png"
+              alt=""
+            />
+            <div class="h-full rounded-full overflow-hidden">
+              <img class="h-50"src="./img/croissantportrait.jpg" alt="" />
+            </div>
+          </div>
+           
+            <!-- right -->
+            <div class="my-auto flex flex-col gap-3">
+              <h1 class="text-accent-500 font-bold">ABOUT ME</h1>
+              <h1 class="text-3xl font-medium dark:text-white">Better Design</h1>
+              <h1 class="text-3xl font-medium dark:text-white">
+                Better Experience
+              </h1>
+              <p class="text-gray-400">
+               Everyday I enjoy eating croissants, pancakes, or egg tarts with my coffee. Most days I use the tech below to make cool things.
+              </p>
+              <h2 class="text-gray-400 font-medium">HTML / CSS</h2>
+              <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                <div class="w-6/6 bg-accent h-1.5 rounded-md"></div>
+              </div>
+              <h2 class="text-gray-400 font-medium">Javascript</h2>
+              <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                <div class="w-6/6 bg-accent h-1.5 rounded-md"></div>
+              </div>
+              <h2 class="text-gray-400 font-medium">React / Redux</h2>
+              <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                <div class="w-5/6 bg-accent h-1.5 rounded-md"></div>
+              </div>
+              <h2 class="text-gray-400 font-medium">Ruby on Rails</h2>
+              <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                <div class="w-5/6 bg-accent h-1.5 rounded-md"></div>
+              </div>
+            </div>
+          </div>
+        </div>
     <!-- services -->
     <div id="services" class="dark:bg-slate-900">
-      
+      <p class="text-center">coming soon...</p>
     </div>
     <!-- works -->
     <div id="works" class="py-40 dark:bg-slate-900">
-  
+
     </div>
 
     <!-- contact -->
@@ -132,7 +169,7 @@
      
     </div>
     <!-- footer -->
-    <div class="w-full bg-gray-800">
+    <!-- <div class="w-full bg-gray-800">
       <div class="container mx-auto py-5 flex items-center justify-between">
         <div class="flex items-center gap-2">
           <img class="w-8" src="./img/logo.png" alt="" />
@@ -145,7 +182,7 @@
           <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="" />
         </div>
       </div>
-    </div>
+    </div> -->
     <script src="./app.js"></script>
     <script src="./autotyping.js"></script>
   </body>

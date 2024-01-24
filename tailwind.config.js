@@ -8,9 +8,10 @@ module.exports = {
       },
       colors: {
         accent: {
+          DEFAULT: "#D0826F",
           500: "D0826F",
           600: "D0826F"
-        }
+        },
       }
     },
     screens:{
